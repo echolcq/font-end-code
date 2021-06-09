@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--字符集：字符的集合-->
+<!--常见字符集：GBK(gb2312)/UTF-8。 GBK仅存储汉字和一些外文 UTF-8存储世界上所有字符-->
+    <meta charset="UTF-8">
+    <title>这是浏览器title</title>
+</head>
+<body>
+<!--插入（取消）注释：Ctrl+/-->
+<!--给一行打上标签：soft-wrap  Ctrl+Alt+T-->
+
+<!--标题h1-h6-->
+<h1>这是一记标题</h1>
+<h2>这是二级标题</h2>
+
+
+<!--横线，一行-->
+<hr>
+
+<!--段落，单独占一行-->
+<p>wenben1</p>
+
+<!--img标签不会独占一行-->
+<!--其他属性：width height title alt-->
+<!--同时指定width height 图片可能会变形。解决：只指定高度或宽度，系统会自动按比例缩放图片，不会变形-->
+<!--title属性：告诉浏览器，当鼠标悬停在该图片上时出现的提示语-->
+<!---alt:alternate 当需要显示的图片找不到了时显示什么内容-->
+<img src="01.jpg" alt="找不到图片"><br><br>
+<img src="https://th.bing.com/th/id/R33674725d9ae34f86e3835ae30b20afe?rik=Pb3C9e5%2b%2b3a9Vw&riu=http%3a%2f%2fwww.desktx.com%2fd%2ffile%2fwallpaper%2fscenery%2f20180626%2f4c8157d07c14a30fd76f9bc110b1314e.jpg&ehk=9tpmnrrRNi0eBGq3CnhwvuU8PPmKuy1Yma0zL%2ba14T0%3d&risl=&pid=ImgRaw" width="250" title="鼠标悬停时">
+<!--路径问题：src有相对路径也有绝对路径 -->
+    <!--相对路径：从.html位置开始查找 同级即图片和.html文件存储在同一个文件夹中 src="QR.jpg" 下级即存储图片的文件夹和.html文件在同一个
+    文件夹中 src="images/QR.jpg" 上级即存储图片的位置和存储代码的文件夹在同一个文件夹中 src="../QR.jpg" ”../“是上一级-->
+    <!--绝对路径：从指定的盘符开始查找C:\-->
+    <!--注意事项：1.路径中不要有中文 2.相对路径指定文件不可以进行跨盘访问 3.使用相对路径，可移植性-->
+
+<!--换行br-->
+<!--br标签可以多次使用，使用几次就换几次行.br标签：不另起一个段落换行，而在企业开发中一般情况下换行都是因为需要另起一个段落换行，所以在企业中一般
+不用-->
+<!--另起一段落换行，可以使用p标签包裹-->
+
+<!--a标签:页面与页面之间的跳转-->
+<!--<a href="跳转的链接">显示的内容</a> a标签必须有href属性-->
+<!--文字点击跳转-->
+<a href="https://www.zhihu.com" target="_blank" title="鼠标悬停时">知乎</a>
+<!--图片点击跳转-->
+<a href="https://www.zhihu.com">
+    <img src="https://th.bing.com/th/id/R33674725d9ae34f86e3835ae30b20afe?rik=Pb3C9e5%2b%2b3a9Vw&riu=http%3a%2f%2fwww.desktx.com%2fd%2ffile%2fwallpaper%2fscenery%2f20180626%2f4c8157d07c14a30fd76f9bc110b1314e.jpg&ehk=9tpmnrrRNi0eBGq3CnhwvuU8PPmKuy1Yma0zL%2ba14T0%3d&risl=&pid=ImgRaw" width="250" title="鼠标悬停时">
+</a>
+<!--本地HTML文件跳转，使用相对路径-->
+<a href="01HTML标签.html">本地HTML</a>
+<!--其他属性-->
+    <!--target:控制如何跳转 值：_self(在当前页面跳转,默认值）,_blank（新建页面跳转）-->
+    <!--title:鼠标悬停时的显示文本-->
+
+
+
+
+
+wenben1
+</body>
+</html>
